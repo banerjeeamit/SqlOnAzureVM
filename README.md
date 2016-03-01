@@ -11,4 +11,5 @@ List of PowerShell scripts files available
 6. Get-OSFilesDB.ps1 - Checks to see if database files are hosted on the OS drive  
 7. Get-StorageAccountBP.ps1 - Checks to see if the storage account has replication enabled  
 8. Get-VMSize.ps1 - Checks if the right virtual machine tier is being used  
-9. Temporary Drive.ps1 - Finds out the temporary drive on the virtual machine   
+9. Temporary Drive.ps1 - Finds out the temporary drive on the virtual machine     
+10. Get-Backups.ps1 - Finds out if any backups are being taken to local disk
