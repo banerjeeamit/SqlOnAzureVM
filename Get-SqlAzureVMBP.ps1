@@ -11,8 +11,16 @@ Write-Host "***** Check for storage best practices"
 &'.\Get-VMSize.ps1' $VMName $RGName
 &'.\Get-IFI.ps1'
 &'.\Get-LPIM.ps1' $sqlserver
-Write-Host "***** Check for database properties"
+Write-Host "***** Check for server best practices"
+&'.\Get-PowerPlan.ps1' 
+Write-Host "***** Check for instance best practices"
+&'.\Get-MaxDop.ps1' $sqlserver
+&'.\Get-MaxServerMemory.ps1' $sqlserver
+Write-Host "***** Check for database best practices"
 &'.\Get-OSFilesDB.ps1' $sqlserver
 &'.\Get-DBProperties.ps1' $sqlserver
 &'.\Get-FilesOnTemp.ps1' $sqlserver $TempDrive 
-&'.\Get-Backups.ps1' $sqlserver 
+&'.\Get-AutoShrinkClose.ps1' $sqlserver
+&'.\Get-TempdbFiles.ps1' $sqlserver
+
+
