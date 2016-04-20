@@ -13,3 +13,7 @@ List of PowerShell scripts files available
 8. Get-VMSize.ps1 - Checks if the right virtual machine tier is being used  
 9. Temporary Drive.ps1 - Finds out the temporary drive on the virtual machine     
 10. Get-Backups.ps1 - Finds out if any backups are being taken to local disk
+11. Get-TempdbFiles.ps1 - Checks if -T1118 is enabled (not required for SQL Server 2016) and if tempdb data files are configured as per best practices mentioned in KB328551
+12. Get-MaxDop.ps1 - Checks if Max Degree of Parallelism is configured as per best practices mentioned in KB2806535
+13. Get-MaxServerMemory.ps1 - Checks if Max Server Memory is configured to a finite value lesser than total physical memory
+14. Get-PowerPlan.ps1 - Checks to see if the Power Plan is configured to High Performance
